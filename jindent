@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+import sys
+import json
+
+indent_spaces = int(sys.argv[1]) if len(sys.argv) == 2 else 4
+content = ""
+for line in sys.stdin:
+    content += line
+
+root = json.loads(content)
+print(json.JSONEncoder(sort_keys=True, indent=indent_spaces).encode(root))
