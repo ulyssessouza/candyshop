@@ -5,3 +5,4 @@ ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 install:
 	ln -s $(ROOT_DIR)/jindent /usr/bin/jindent
+	ln -s $(ROOT_DIR)/gource-video-maker.sh /usr/bin/gource-video-maker
