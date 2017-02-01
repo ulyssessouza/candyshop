@@ -11,3 +11,5 @@ install:
 	ln -s $(ROOT_DIR)/gource-video-maker.sh $(PATH_LOCATION)/gource-video-maker
 	unlink $(PATH_LOCATION)/docker-cleanup-containers || true
 	ln -s $(ROOT_DIR)/docker-cleanup-containers $(PATH_LOCATION)/docker-cleanup-containers
+	unlink $(PATH_LOCATION)/find-in-jars.sh || true
+	ln -s $(ROOT_DIR)/find-in-jars.sh $(PATH_LOCATION)/find-in-jars.sh
